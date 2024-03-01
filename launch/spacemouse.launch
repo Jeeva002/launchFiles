@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  
+  
+  <include file="$(find dsr_control)/launch/dsr_moveit.launch" />
+  <node name="listener_node" pkg="dsr_example_py" type="spaceMouseControl.py" output="screen"/>
+  <node name="publisher_node" pkg="dsr_example_py" type="spacemousepython.py" output="screen"/>
+</launch>
